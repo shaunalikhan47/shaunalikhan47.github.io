@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shaun Khan-Assian | Program & Project Manager</title>
+<meta name="description" content="Portfolio of Shaun Khan-Assian, a program and project manager who ships digital products and AI-assisted work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1d2a2e; --muted:#5b6b70; --line:#dde5e6; --bg:#f7f9f8; --card:#ffffff;
+    --accent:#0f7c6e; --accent-soft:#e3f2ef; --deep:#0e2326;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;color:var(--deep)}
+
+  nav{position:sticky;top:0;z-index:10;background:rgba(247,249,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+  nav .name{font-weight:600;color:var(--deep)}
+  nav ul{display:flex;gap:24px;list-style:none;font-size:15px}
+  nav ul a{color:var(--muted)}
+
+  header{padding:88px 0 72px}
+  .eyebrow{font-size:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+  header h1{font-size:clamp(38px,6vw,60px);max-width:820px}
+  header p.lead{font-size:20px;color:var(--muted);max-width:680px;margin:20px 0 32px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:600;font-size:15px;border:1.5px solid var(--accent)}
+  .btn.primary{background:var(--accent);color:#fff}
+  .btn:hover{text-decoration:none;opacity:.9}
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+  .stat b{display:block;font-family:Fraunces,serif;font-size:34px;color:var(--accent);line-height:1.1}
+  .stat span{font-size:14px;color:var(--muted)}
+
+  section{padding:72px 0;border-top:1px solid var(--line)}
+  section h2{font-size:36px;margin-bottom:8px}
+  section .sub{color:var(--muted);margin-bottom:40px;max-width:640px}
+
+  .case{display:grid;grid-template-columns:1fr 1.25fr;gap:40px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:36px;margin-bottom:28px}
+  .case .media{align-self:start;aspect-ratio:4/5;border-radius:12px;background:linear-gradient(160deg,#123b3a,#0b1f22);display:flex;align-items:center;justify-content:center;overflow:hidden;color:#9fd3c7;font-size:14px;text-align:center}
+  .case .media img{width:100%;height:100%;object-fit:cover;display:block}
+  .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+  .tag{font-size:12px;font-weight:600;background:var(--accent-soft);color:var(--accent);padding:4px 10px;border-radius:999px}
+  .case h3{font-size:28px;margin-bottom:4px}
+  .case .role{font-size:14px;color:var(--muted);margin-bottom:18px}
+  .case h4{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:18px 0 6px}
+  .case ul{padding-left:20px}
+  .case li{margin-bottom:6px}
+  .result{margin-top:18px;padding:14px 16px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 8px 8px 0;font-size:15px}
+
+  .about{display:grid;grid-template-columns:1.4fr 1fr;gap:48px}
+  .about p{margin-bottom:16px}
+  .timeline{list-style:none;border-left:2px solid var(--line);padding-left:20px}
+  .timeline li{margin-bottom:18px;position:relative}
+  .timeline li::before{content:"";position:absolute;left:-27px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+  .timeline b{display:block;font-size:15px}
+  .timeline span{font-size:14px;color:var(--muted)}
+
+  footer{background:var(--deep);color:#cfe3df;padding:56px 0}
+  footer h2{color:#fff;font-size:32px;margin-bottom:12px}
+  footer a{color:#7fe0cc}
+  footer .links{display:flex;gap:24px;flex-wrap:wrap;margin-top:20px;font-weight:500}
+  footer small{display:block;margin-top:40px;color:#7d9894}
+
+  @media (max-width:800px){
+    nav ul{display:none}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .case,.about{grid-template-columns:1fr;padding:24px}
+    .case .media{aspect-ratio:16/10}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="name">Shaun Khan-Assian</div>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Program &amp; Project Manager</div>
+    <h1>I ship digital products and AI-assisted work, on time and on budget.</h1>
+    <p class="lead">14 years leading teams and programs across web and mobile delivery, multi-site operations, and AI-driven product development. Based in Lakewood, Ohio, and open to remote roles.</p>
+    <div class="btns">
+      <a class="btn primary" href="#work">See my work</a>
+      <a class="btn" href="Shaun-Khan-Assian-Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>120+</b><span>web &amp; mobile launches delivered</span></div>
+      <div class="stat"><b>92.5%</b><span>on time and within budget</span></div>
+      <div class="stat"><b>12.5 hrs</b><span>of manual work automated weekly</span></div>
+      <div class="stat"><b>2</b><span>Unity games in production</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Selected work</h2>
+    <p class="sub">How I plan, lead and deliver. Each project covers the problem, my role and the result.</p>
+
+    <!-- LEAPER -->
+    <article class="case">
+      <div class="media">
+        <img src="images/leaper-character-sheet.png" alt="Leaper character sheet: the alien deer" onerror="this.replaceWith(document.createTextNode('Leaper artwork'))">
+      </div>
+      <div>
+        <div class="tags"><span class="tag">AI-assisted development</span><span class="tag">Unity</span><span class="tag">Mobile</span></div>
+        <h3>Leaper</h3>
+        <div class="role">Mav Ex Gaming · Co-Founder &amp; Director · 2026 · In development</div>
+        <p>A portrait-mode mobile game where a small alien deer leaps across giant mushrooms in a glowing forest. I direct the project end to end, with AI tools as the production team: Claude handles engineering and ChatGPT handles visual development.</p>
+        <h4>The challenge</h4>
+        <p>On the studio's first game, visuals changed after coding had started, which caused costly rework. For Leaper I needed a process that kept a small, AI-driven team building the right thing the first time.</p>
+        <h4>What I did</h4>
+        <ul>
+          <li>Set a design-first rule: a <b>visual bible</b> covering the world, creature, environments and phone mockups had to be approved before any code was written.</li>
+          <li>Gave each AI tool a clear role, and kept every asset in one shared folder structure as the single source of truth.</li>
+          <li>Ran short build-and-test cycles with Android builds tested on a real device, and turned what I saw into prioritized fixes.</li>
+          <li>Focused on how the game feels to play: a countdown after respawning and wider landing platforms to cut down on unfair-feeling failures, plus rewarded-ad respawns for monetization.</li>
+        </ul>
+        <div class="result"><b>Result:</b> Got from an approved visual bible to a playable Android build within days. A Google Play release is planned.</div>
+      </div>
+    </article>
+
+    <!-- MICROVERSE -->
+    <article class="case">
+      <div class="media">
+        <img src="images/microverse.png" alt="Microverse screenshot" onerror="this.replaceWith(document.createTextNode('Microverse screenshot'))">
+      </div>
+      <div>
+        <div class="tags"><span class="tag">Unity</span><span class="tag">Beta testing</span><span class="tag">AI-assisted development</span></div>
+        <h3>Microverse</h3>
+        <div class="role">Mav Ex Gaming · Co-Founder &amp; Director · 2026 · In beta</div>
+        <p>The studio's first title, built in Unity and now in a small beta test.</p>
+        <h4>What I did</h4>
+        <ul>
+          <li>Directed development from concept through beta, managing scope and priorities across AI coding tools.</li>
+          <li>Handed development off from one AI platform to another partway through the project.</li>
+          <li>Ran beta testing and collected feedback to decide what to fix before release.</li>
+        </ul>
+        <div class="result"><b>Lesson applied:</b> Microverse showed how expensive late visual changes are. That lesson became the design-first process now used on Leaper.</div>
+      </div>
+    </article>
+
+    <!-- MAVERICK -->
+    <article class="case">
+      <div class="media">
+        <img src="images/maverick.png" alt="Maverick Exchange project" onerror="this.replaceWith(document.createTextNode('Maverick Exchange'))">
+      </div>
+      <div>
+        <div class="tags"><span class="tag">Program management</span><span class="tag">Automation</span><span class="tag">Web &amp; mobile</span></div>
+        <h3>Maverick Exchange: Digital Delivery &amp; Automation</h3>
+        <div class="role">Program Manager / Creative Director · 2019–2021, 2025–Present</div>
+        <p>I lead a seven-person team of developers, designers and creative staff that delivers web platforms, mobile apps and interactive games for clients, running 5–10 programs at a time within a $600K–$1M annual portfolio.</p>
+        <h4>What I did</h4>
+        <ul>
+          <li>Turned client goals into roadmaps and managed scope, schedule, budget, risk and QA from discovery through launch.</li>
+          <li>Introduced practical automations: customer intake chatbots, automated appointment, reminder and billing emails, and site-engagement tracking.</li>
+          <li>Kept final approval on visual design and UX so the technical work matched each client's brand and goals.</li>
+        </ul>
+        <div class="result"><b>Results:</b> 120+ launches, 92.5% on time and within budget · 57% average increase in time on site · 26% portfolio revenue growth · 12.5 hours of manual work removed each week.</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <h2>About me</h2>
+      <p class="sub" style="margin-bottom:24px">From firefighter and paramedic to program manager.</p>
+      <p>I started my career where plans either work or people get hurt: as a firefighter, paramedic and instructor. That's where I learned to stay calm, communicate clearly and lead a team when the stakes are high.</p>
+      <p>Since then I've launched a critical care transport department, led safety and operations programs across three Amazon sites with 1,800+ employees, and now run digital delivery and a game division at Maverick Exchange.</p>
+      <p>Today I'm focused on the space where program management meets AI: helping teams use AI tools to deliver faster without lowering the bar. I'm preparing for the PMP exam in December 2026.</p>
+    </div>
+    <ul class="timeline">
+      <li><b>Maverick Exchange</b><span>Program Manager / Creative Director · Co-Founder, Mav Ex Gaming</span></li>
+      <li><b>Amazon</b><span>Sub-Regional Safety Lead · 62% reduction in recordable injuries</span></li>
+      <li><b>Euclid Fire Department</b><span>Firefighter / Paramedic / Instructor</span></li>
+      <li><b>Lake Hospital System</b><span>Launched a countywide critical care transport department</span></li>
+      <li><b>Western Governors University</b><span>B.S. Business Administration</span></li>
+    </ul>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Let's talk.</h2>
+    <p>I'm looking for program and project management roles in digital delivery and AI. Remote, or on-site in Cleveland, Dallas or Austin.</p>
+    <div class="links">
+      <a href="mailto:shaun.ali.khan47@gmail.com">shaun.ali.khan47@gmail.com</a>
+      <a href="https://linkedin.com/in/shaun-khan-assian-65565718b" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/shaunalikhan47" target="_blank" rel="noopener">GitHub</a>
+      <a href="Shaun-Khan-Assian-Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+    </div>
+    <small>© 2026 Shaun Khan-Assian</small>
+  </div>
+</footer>
+
+</body>
+</html>
